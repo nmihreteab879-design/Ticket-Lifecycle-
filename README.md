@@ -26,129 +26,50 @@ This tutorial outlines the creation, observation, and resolution of tickets in o
 
 <h2>Configuration Steps</h2>
 
-<p>
-<img src="REPLACE_WITH_ADMIN_LOGIN_IMAGE_URL" height="80%" width="80%" alt="Admin Login Page"/>
-</p>
-<p>
-<b>Step 1:</b> Admin/Analyst Login Page: <br>
-URL: http://localhost/osTicket/scp/login.php
-</p>
-<br />
+ I opened the end-user osTicket URL and selected Open a New Ticket. I entered a fake name, fake email, and phone number. The ticket I created was about the entire mobile online banking system being down. The correct help topic for this situation should be Business Critical Outage, but many end users choose more general options, so for the sake of the lab I selected Report Problem. After filling out the information, I clicked Create Ticket.
+ <img width="759" height="948" alt="image" src="https://github.com/user-attachments/assets/49de5175-5723-4264-ac9b-e0c8e94a1576" />
 
-<p>
-<img src="REPLACE_WITH_ENDUSER_PORTAL_IMAGE_URL" height="80%" width="80%" alt="End User Portal"/>
-</p>
-<p>
-<b>Step 2:</b> End Users osTicket URL: <br>
-URL: http://localhost/osTicket
-</p>
-<br />
+I then logged in as John, which is a user I previously created. I opened the online banking system ticket to view the ticket details.   
+   <img width="766" height="943" alt="image" src="https://github.com/user-attachments/assets/2e5dc947-ea29-4b67-a9bb-69754f255d78" />
 
-<p>
-<img src="REPLACE_WITH_DEPARTMENT_IMAGE_URL" height="80%" width="80%" alt="Department Configuration"/>
-</p>
-<p>
-<b>Step 3:</b> Department Configuration <br>
-- Change the SysAdmins Department to a Top-Level Department <br>
-- DELETE the Maintenance Department (do not archive)
-</p>
-<br />
+   I changed the SLA plan to Sev-A 24/7 schedule because the problem had a wide impact, due to customers not being able to do online banking. Then I changed the help topic to report problem/buisness crtical outage because no customer is able to acess online banking . I assigned the problem to online banking team and the description I used was customers cant acess the online banking portal.
+   
+   <img width="767" height="924" alt="image" src="https://github.com/user-attachments/assets/d3d4fa90-37ed-4c5e-8f99-47678b8d9548" />
 
-<p>
-<img src="REPLACE_WITH_TICKET1_IMAGE_URL" height="80%" width="80%" alt="Ticket 1 Creation"/>
-</p>
-<p>
-<b>Step 4:</b> End User Ticket Creation <br>
-Ticket Title: Entire mobile/online banking system is down
-</p>
-<br />
+I then signed in as jane a user I created that is apart of the online banking lab, and I will go to the ticket as jane and assign the ticket to myself. 
 
-<p>
-<img src="REPLACE_WITH_TICKET1_OBSERVE_IMAGE_URL" height="80%" width="80%" alt="Ticket 1 Observation"/>
-</p>
-<p>
-<b>Step 5:</b> Observe Ticket Properties (Agent John) <br>
-- Priority <br>
-- Department <br>
-- SLA <br>
-- Assigned To
-</p>
-<br />
+ <img width="766" height="952" alt="image" src="https://github.com/user-attachments/assets/d465f0ca-ce79-467b-98da-74f654e62ace" />
 
-<p>
-<b>Step 6:</b> Set Ticket Properties <br>
-- SLA: Sev-A (1 hour, 24/7) <br>
-- Department: Online Banking
-</p>
-<br />
+ I then typed an update that stated I suspect the problem was related to recent updates and I will undo them if I find out this is true then I typed it was determined the root cause was the recent update, we rolled it back, notified the vendor, and are waiting for a proper fix. Online banking should now be up and running. 
 
-<p>
-<b>Step 7:</b> Attempt to Access Ticket as John <br>
-Observe whether the ticket can be viewed or modified.
-</p>
-<br />
+<img width="759" height="229" alt="image" src="https://github.com/user-attachments/assets/709169f3-cf10-464b-9ade-f9be24775a94" />
 
-<p>
-<b>Step 8:</b> Work Ticket to Completion <br>
-Assign and complete ticket as Jane
-</p>
-<br />
+I then changed the prioritiy level to emergency and pressed the resolved ticket button.
 
-<p>
-<img src="REPLACE_WITH_TICKET2_IMAGE_URL" height="80%" width="80%" alt="Ticket 2 Creation"/>
-</p>
-<p>
-<b>Step 9:</b> Create Second Ticket (End User) <br>
-Ticket Title: Accounting department needs Adobe upgrade, broken
-</p>
-<br />
+<img width="757" height="865" alt="image" src="https://github.com/user-attachments/assets/f11a35ab-3de8-4c82-b217-054f2e567761" />
 
-<p>
-<b>Step 10:</b> Observe and Set Properties (Agent John) <br>
-- SLA: Sev-B (4 hours, 24/7) <br>
-- Department: Support <br>
-Work ticket to completion as John
-</p>
-<br />
+I then went to the enduser portal for creating tickets I then I pressed on open a new ticket again and entered a fake name email and phone number. The problem is accounting department needs an adobe upgrade I will make the help topic general inquiry/ Other the description of the problem was many people in the accounting department cannot use their adobe software.
 
-<p>
-<img src="REPLACE_WITH_TICKET3_IMAGE_URL" height="80%" width="80%" alt="Ticket 3 Creation"/>
-</p>
-<p>
-<b>Step 11:</b> Create Third Ticket (End User) <br>
-Ticket Title: CFO’s laptop will no longer turn on
-</p>
-<br />
+<img width="760" height="943" alt="image" src="https://github.com/user-attachments/assets/e0eb4d7b-7d83-4111-b7fd-b362c0915e01" />
 
-<p>
-<b>Step 12:</b> Observe and Set Properties (Agent John) <br>
-- SLA: Sev-B (4 hours, 24/7) <br>
-- Department: Support <br>
-Work ticket to completion as John
-</p>
-<br />
+Then I logged back in as john and viewed inside the ticket
 
-<p>
-<b>Step 13:</b> Escalate and Observe Tickets <br>
-- Set properties to all tickets: SEV-A for SysAdmins last <br>
-- Observe ticket becomes inaccessible <br>
-- Switch to Admin Panel and assign View-access for SysAdmins <br>
-- Switch back to Agent Panel and observe escalated ticket <br>
-- Confirm that changes cannot be made
-</p>
-<br />
+<img width="764" height="911" alt="image" src="https://github.com/user-attachments/assets/a2f0b9da-9929-4f92-8906-27d889e57bea" />
 
-<p>
-<b>Step 14:</b> Solve All Tickets <br>
-Complete resolution of all tickets.
-</p>
-<br />
+ I then made the SLA plan Sev-C because the scenario the lab director gave for this ticket is that only two people in the accounting department are unable to open and use adobe reader w and assigned it to John. I then typed as a post that I will test a restart and that ended up working so I posted that the restart fixed the issue then I pressed ticket resolved
 
-<p>
-<b>Step 15:</b> Real-World Ticketing Explanation <br>
-- Email notifications are sent for every ticket update <br>
-- Users can respond to ticket updates via email <br>
-- Tickets can be created through phone, chat, email, web form, or in-person <br>
-- Even quick fixes should be recorded as tickets for metrics and reporting purposes
-</p>
+<img width="1512" height="956" alt="image" src="https://github.com/user-attachments/assets/6c18b9fe-2dbc-4ae5-b7c2-18896fa42506" />
 
+I then went to the end url and pressed on open a new ticket for creating tickets then I pressed open a new ticket an entered a fake name email and phone number. The help topic was report a problem/ peronal computer issues. The issue summary was that the CFO is unable to use his laptop. 
+
+<img width="1506" height="958" alt="image" src="https://github.com/user-attachments/assets/338d7ad1-7051-4740-a2ac-b7dbe7e25269" />
+
+I then logged in as John and opened the ticket and then changed the priority to emergency and set the SLA Plan to Sev-B then I assigned it to John. I then typed that the issue is that the CFO's laptop was not charging because the charger was broken, and then I brought new charger and the problem was resolved. Lastly I pressed resovle ticket.
+ 
+<img width="1469" height="950" alt="image" src="https://github.com/user-attachments/assets/26b31f96-70ff-42a9-966f-08991559d275" />
+
+
+
+ 
+ 
+   
