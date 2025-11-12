@@ -28,9 +28,11 @@ This tutorial outlines the creation, observation, and resolution of tickets in o
 <h2>Configuration Steps</h2>
 
  I opened the end-user osTicket URL and selected Open a New Ticket. I entered a fake name, fake email, and phone number. The ticket I created was about the entire mobile online banking system being down. The correct help topic for this situation should be Business Critical Outage, but many end users choose more general options, so for the sake of the lab I selected Report Problem. After filling out the information, I clicked Create Ticket.
+ 
  <img width="759" height="948" alt="image" src="https://github.com/user-attachments/assets/49de5175-5723-4264-ac9b-e0c8e94a1576" />
 
-I then logged in as John, which is a user I previously created. I opened the online banking system ticket to view the ticket details.   
+I then logged in as John, which is a user I previously created. I opened the online banking system ticket to view the ticket details. 
+
    <img width="766" height="943" alt="image" src="https://github.com/user-attachments/assets/2e5dc947-ea29-4b67-a9bb-69754f255d78" />
 
    I changed the SLA plan to Sev-A 24/7 schedule because the problem had a wide impact, due to customers not being able to do online banking. Then I changed the help topic to report problem/buisness crtical outage because no customer is able to acess online banking . I assigned the problem to online banking team and the description I used was customers cant acess the online banking portal.
@@ -50,7 +52,6 @@ I then changed the prioritiy level to emergency and pressed the resolved ticket 
 <img width="757" height="865" alt="image" src="https://github.com/user-attachments/assets/f11a35ab-3de8-4c82-b217-054f2e567761" />
 
 I then went to the enduser portal for creating tickets I then I pressed on open a new ticket again and entered a fake name email and phone number. The problem is accounting department needs an adobe upgrade I will make the help topic general inquiry/ Other the description of the problem was many people in the accounting department cannot use their adobe software.
-
 
 <img width="760" height="943" alt="image" src="https://github.com/user-attachments/assets/e0eb4d7b-7d83-4111-b7fd-b362c0915e01" />
 
