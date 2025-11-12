@@ -70,9 +70,3 @@ I then went to the end url and pressed on open a new ticket for creating tickets
 I then logged in as John and opened the ticket and then changed the priority to emergency and set the SLA Plan to Sev-B then I assigned it to John. I then typed that the issue is that the CFO's laptop was not charging because the charger was broken, and then I brought new charger and the problem was resolved. Lastly I pressed resovle ticket.
  
 <img width="1469" height="950" alt="image" src="https://github.com/user-attachments/assets/26b31f96-70ff-42a9-966f-08991559d275" />
-
-<p align="center">
-  <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
-
-<h1 align="center">osTicket - Ticketing System Lab</h1>
